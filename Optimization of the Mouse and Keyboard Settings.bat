@@ -1,5 +1,5 @@
 @ECHO OFF
-title OOTMAKS V2 by Smolich
+title OOTMAKS by Smolich
 MODE 60,60
 shift /0
 call :admin
@@ -20,13 +20,13 @@ Goto GO
 Reg.exe query "HKU\S-1-5-19\Environment" >nul 2>&1
 if not "%errorlevel%" EQU "0" (
 @ECHO OFF
-title OOTMAKS V2 by Smolich
+title OOTMAKS by Smolich
 color 4F
 mode con: cols=101 lines=5
 echo.
-echo   Please Run As Administrator, To Continue Loading Optimization Of The Mouse And Keyboard Settings V2  
+echo   Please Run As Administrator, To Continue Loading Optimization Of The Mouse And Keyboard Settings  
 echo.
-echo   Uruchom Jako Administrator, Aby Kontynuowac Ladowanie Optymalizacja Ustawien Myszy i Klawiatury V2
+echo   Uruchom Jako Administrator, Aby Kontynuowac Ladowanie Optymalizacja Ustawien Myszy i Klawiatury
 pause>nul
 exit
 )
@@ -34,11 +34,11 @@ goto :eof
 
 :GO
 MODE 60,60
-title OOTMAKS V2 by Smolich
+title OOTMAKS by Smolich
 color F
 cls
 echo.
-call :ColorText 0A "     Optimization Of The Mouse And Keyboard Settings V2
+call :ColorText 0A "     Optimization Of The Mouse And Keyboard Settings
 echo.
 echo.
 call :ColorText 0E "    Mouse
@@ -135,7 +135,7 @@ goto GO
 cls
 Reg.exe add "HKCU\Control Panel\Desktop" /v "UserPreferencesMask" /t REG_BINARY /d "9e1e068012000000" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -147,7 +147,7 @@ goto GO
 cls
 Reg.exe add "HKU\.DEFAULT\Control Panel\Desktop" /v "UserPreferencesMask" /t REG_BINARY /d "9e3e028012000000" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -159,7 +159,7 @@ goto GO
 cls
 Reg.exe add "HKCU\Control Panel\Mouse" /v "MouseSensitivity" /t REG_SZ /d "10" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -171,7 +171,7 @@ goto GO
 cls
 Reg.exe add "HKU\.DEFAULT\Control Panel\Mouse" /v "MouseSensitivity" /t REG_SZ /d "10" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -184,7 +184,7 @@ cls
 Reg.exe add "HKCU\Control Panel\Mouse" /v "SmoothMouseXCurve" /t REG_BINARY /d "0000000000000000c0cc0c0000000000809919000000000040662600000000000033330000000000" /f
 Reg.exe add "HKCU\Control Panel\Mouse" /v "SmoothMouseYCurve" /t REG_BINARY /d "0000000000000000000038000000000000007000000000000000a800000000000000e00000000000" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -197,7 +197,7 @@ cls
 Reg.exe add "HKU\.DEFAULT\Control Panel\Mouse" /v "SmoothMouseXCurve" /t REG_BINARY /d "0000000000000000c0cc0c0000000000809919000000000040662600000000000033330000000000" /f
 Reg.exe add "HKU\.DEFAULT\Control Panel\Mouse" /v "SmoothMouseYCurve" /t REG_BINARY /d "0000000000000000000038000000000000007000000000000000a800000000000000e00000000000" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -211,7 +211,7 @@ Reg.exe add "HKCU\Control Panel\Mouse" /v "MouseSpeed" /t REG_SZ /d "0" /f
 Reg.exe add "HKCU\Control Panel\Mouse" /v "MouseThreshold1" /t REG_SZ /d "0" /f
 Reg.exe add "HKCU\Control Panel\Mouse" /v "MouseThreshold2" /t REG_SZ /d "0" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -225,7 +225,7 @@ Reg.exe add "HKU\.DEFAULT\Control Panel\Mouse" /v "MouseSpeed" /t REG_SZ /d "0" 
 Reg.exe add "HKU\.DEFAULT\Control Panel\Mouse" /v "MouseThreshold1" /t REG_SZ /d "0" /f
 Reg.exe add "HKU\.DEFAULT\Control Panel\Mouse" /v "MouseThreshold2" /t REG_SZ /d "0" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -237,7 +237,7 @@ goto GO
 cls
 Reg.exe add "HKCU\Control Panel\Mouse" /v "MouseHoverTime" /t REG_SZ /d "100" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -249,7 +249,7 @@ goto GO
 cls
 Reg.exe add "HKU\.DEFAULT\Control Panel\Mouse" /v "MouseHoverTime" /t REG_SZ /d "100" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -261,7 +261,7 @@ goto GO
 cls
 Reg.exe add "HKCU\Control Panel\Mouse" /v "DoubleClickSpeed" /t REG_SZ /d "480" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -273,7 +273,7 @@ goto GO
 cls
 Reg.exe add "HKU\.DEFAULT\Control Panel\Mouse" /v "DoubleClickSpeed" /t REG_SZ /d "480" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -285,7 +285,7 @@ goto GO
 cls
 Reg.exe add "HKCU\Control Panel\Accessibility\MouseKeys" /v "Flags" /t REG_SZ /d "58" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -297,7 +297,7 @@ goto GO
 cls
 Reg.exe add "HKU\.DEFAULT\Control Panel\Accessibility\MouseKeys" /v "Flags" /t REG_SZ /d "58" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -314,7 +314,7 @@ Reg.exe add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSp
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed" /v "CursorUpdateInterval" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed" /v "IRRemoteNavigationDelta" /t REG_DWORD /d "1" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -327,7 +327,7 @@ cls
 Reg.exe add "HKCU\Control Panel\Accessibility\MouseKeys" /v "MaximumSpeed" /t REG_SZ /d "39" /f
 Reg.exe add "HKCU\Control Panel\Accessibility\MouseKeys" /v "TimeToMaximumSpeed" /t REG_SZ /d "3000" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -340,7 +340,7 @@ cls
 Reg.exe add "HKCU\Control Panel\Desktop" /v "LogPixels" /t REG_DWORD /d "96" /f
 Reg.exe add "HKCU\Control Panel\Desktop" /v "Win8DpiScaling" /t REG_DWORD /d "1" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -354,7 +354,7 @@ Reg.exe add "HKCU\Control Panel\Accessibility\StickyKeys" /v "Flags" /t REG_SZ /
 Reg.exe add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "Flags" /t REG_SZ /d "122" /f
 Reg.exe add "HKCU\Control Panel\Accessibility\ToggleKeys" /v "Flags" /t REG_SZ /d "58" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -368,7 +368,7 @@ Reg.exe add "HKU\.DEFAULT\Control Panel\Accessibility\ToggleKeys" /v "Flags" /t 
 Reg.exe add "HKU\.DEFAULT\Control Panel\Accessibility\StickyKeys" /v "Flags" /t REG_SZ /d "506" /f
 Reg.exe add "HKU\.DEFAULT\Control Panel\Accessibility\Keyboard Response" /v "Flags" /t REG_SZ /d "122" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -382,7 +382,7 @@ Reg.exe add "HKCU\Control Panel\Keyboard" /v "InitialKeyboardIndicators" /t REG_
 Reg.exe add "HKCU\Control Panel\Keyboard" /v "KeyboardDelay" /t REG_SZ /d "0" /f
 Reg.exe add "HKCU\Control Panel\Keyboard" /v "KeyboardSpeed" /t REG_SZ /d "31" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -396,7 +396,7 @@ Reg.exe add "HKU\.DEFAULT\Control Panel\Keyboard" /v "InitialKeyboardIndicators"
 Reg.exe add "HKU\.DEFAULT\Control Panel\Keyboard" /v "KeyboardDelay" /t REG_SZ /d "0" /f
 Reg.exe add "HKU\.DEFAULT\Control Panel\Keyboard" /v "KeyboardSpeed" /t REG_SZ /d "31" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -409,7 +409,7 @@ cls
 Reg.exe add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "AutoRepeatRate" /t REG_SZ /d "0" /f
 Reg.exe add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "AutoRepeatDelay" /t REG_SZ /d "0" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -464,7 +464,7 @@ Reg.exe add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "AutoRepeatD
 Reg.exe add "HKCU\Control Panel\Accessibility\MouseKeys" /v "MaximumSpeed" /t REG_SZ /d "80" /f
 Reg.exe add "HKCU\Control Panel\Accessibility\MouseKeys" /v "TimeToMaximumSpeed" /t REG_SZ /d "3000" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
@@ -519,7 +519,7 @@ Reg.exe add "HKCU\Control Panel\Desktop" /v "Win8DpiScaling" /t REG_DWORD /d "1"
 Reg.exe add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "AutoRepeatRate" /t REG_SZ /d "0" /f
 Reg.exe add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "AutoRepeatDelay" /t REG_SZ /d "0" /f
 cls
-SET msgboxTitle=OOTMAKS V2 by Smolich
+SET msgboxTitle=OOTMAKS by Smolich
 SET msgboxBody=Finished - Skonczone
 SET tmpmsgbox=%temp%~tmpmsgbox.vbs
 IF EXIST "%tmpmsgbox%" DEL /F /Q "%tmpmsgbox%"
